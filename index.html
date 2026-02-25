@@ -62,40 +62,52 @@ header {
   position: relative;
   z-index: 1;
 }
-    .profile img {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 6px solid white;
-      object-fit: cover;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
-    }
-   
+    /* PERFIL CENTRALIZADO */
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -80px; /* faz a foto subir e encaixar na faixa */
+  position: relative;
+  z-index: 5;
+}
 
-    .profile h2 {
-      margin-top: 15px;
-      font-size: 1.8rem;
-      color: var(--purple);
-    }
+.profile img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 6px solid white;
+  object-fit: cover;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+  background: #fff;
+}
 
-    .profile p {
-      margin-top: 8px;
-      font-size: 1rem;
-      text-align: center;
-      max-width: 500px;
-      padding: 0 20px;
-    }
+.profile h2 {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: var(--purple);
+}
 
-    .whatsapp {
-      margin-top: 15px;
-      background: #25D366;
-      color: white;
-      padding: 12px 22px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+.profile p {
+  margin-top: 8px;
+  font-size: 1rem;
+  max-width: 500px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.whatsapp {
+  margin-top: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.3s;
+}
 
     .whatsapp:hover {
       transform: scale(1.05);
